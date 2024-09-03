@@ -154,8 +154,9 @@ app.get('/recommender', async (req, res) => {
   const title = req.query.title;
   try {
     const response = await axios.get(
-      // https://recommender-system-python-only.onrender.com
-      `http://127.0.0.1:5001/recommend?title=${encodeURIComponent(title)}`
+      `https://recommender-system-python-only.onrender.com/recommend?title=${encodeURIComponent(
+        title
+      )}`
     );
     res.json(response.data);
   } catch (error) {
