@@ -95,7 +95,7 @@ const port = process.env.PORT || 3001;
 const allowedOrigins = [
   'http://localhost:3001',
   'http://localhost:3000',
-  'https://your-vercel-domain.vercel.app', // Replace with your actual Vercel domain
+  'https://react-recommender-frontend-only.vercel.app', // Replace with your actual Vercel domain
 ];
 
 app.use(
